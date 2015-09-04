@@ -1,19 +1,19 @@
-## Sinopsis
+## Synopsis
 
 Trends cards, an application to show trends by giving the effect you choose.
 
-## Motivación
+## Motivation
 
 This project is finished on September 2014 aproximately, in those moments I did not know so much of CSS3. I learned some of this things from https://github.com/SRCres.
 Now I want to improve those things learned by using some new things.
 
-## Instalación
+## Installation
 
 $ npm install
 
 $ gem install bootstrap-sass
 
-Desarrollo
+Development
 $ gulp
 
 Test
@@ -25,9 +25,9 @@ $ gulp staging
 Production
 $ gulp production
 
-## Referencia API
+## API
 
-A ser definida
+Not defined, only front end with mock values.
 
 ## Tests
 
@@ -36,9 +36,8 @@ Tests runs with mocha, sinon, chai and karma. Expect is the one we use in chai.
 To run tests
 $ gulp karma
 
-## Contribuyen
+## Contributors
 
 Juan José García
 
 Sebastián Crespo
-
