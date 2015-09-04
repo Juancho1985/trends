@@ -1,14 +1,16 @@
 var MenuItemView = require('../views/Commons/itemViews/Menu'),
     menuChannel = require('../../commons/channels/menu'),
     layout = require('../../commons/channels/presenter'),
-    TrendsModel = require('../../entities/Trends'),
+    MenuModel = require('../../entities/Menu'),
     Menu;
 
 Menu = Marionette.Object.extend({
   start: function() {
     var presenter = layout.reqres.request('layout');
-    this.model = new TrendsModel();
-    this.menuItemView = new MenuItemView();
+    this.model = new MenuModel();
+    this.menuItemView = new MenuItemView({
+      model: this.model
+    });
     presenter.menu.show(this.menuItemView);
   }
 });

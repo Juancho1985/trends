@@ -1,9 +1,7 @@
 var mock = require('../../mock'),
     TrendsCollection = require('../collections/Trends'),
-    menu = require('../../commons/channels/menu'),
-    trends = require('../../commons/channels/trends'),
+    menuChannel = require('../../commons/channels/menu'),
     layout = require('../../commons/channels/presenter'),
-    trendsChannel = require('../../commons/channels/trends'),
     CellsCollectionView = require('../views/Commons/collectionViews/Cells'),
     Trends;
 
@@ -11,12 +9,12 @@ Trends = Marionette.Controller.extend({
   start: function() {
     var presenter = layout.reqres.request('layout');
 
-    trends.reqres.setHandler('trends', this.getTrends.bind(this));
+    menuChannel.reqres.setHandler('trends', this.getTrends.bind(this));
 
     this.cellsCollectionView = new CellsCollectionView({ collection: new Backbone.Collection() });
 
     presenter.main.show(this.cellsCollectionView);
-    trendsChannel.vent.on('grid:changed', this.onChangeGrid, this);
+    menuChannel.vent.on('grid:changed', this.onChangeGrid, this);
   },
   getTrends: function () {
     return new TrendsCollection(_.shuffle(mock));

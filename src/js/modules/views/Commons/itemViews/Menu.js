@@ -29,25 +29,27 @@ Menu = Marionette.ItemView.extend({
   },
 
   onRender: function() {
+    var self = this;
     _.defer(function() {
-      this.ui.btn_grid.popover({
+      self.ui.btn_grid.popover({
         html: true,
-        content: this.ui.popover_content.html(),
+        content: self.ui.popover_content.html(),
         viewport: { selector: 'body', padding: '10' },
         placement: 'bottom',
         toggle: 'popover'
       });
 
-      this.ui.btn_grid.on('shown.bs.popover', function() {
+      self.ui.btn_grid.on('shown.bs.popover', function() {
         $('.popover > .popover-content .cell')
-          .on('mouseover', this.onOverCell.bind(this))
-          .one('click', this.onClickCell.bind(this));
-      }.bind(this));
-    }.bind(this));
+          .on('mouseover', self.onOverCell.bind(self))
+          .one('click', self.onClickCell.bind(self));
+      });
+    });
   },
 
   serializeData: function() {
-    var size = menuChannel.reqres.request('size'), cells = [];
+    var size  = this.model.getSize(),
+        cells = [];
 
     for (var i = 1; i <= appConfig.max_rows; i++) {
       for(var j = 1; j <= appConfig.max_columns; j++) {

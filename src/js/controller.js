@@ -2,7 +2,6 @@ var main      = require('./modules/main'),
     menu      = require('./modules/controllers/menu'),
     presenter     = require('./commons/channels/presenter'),
     routes = require('./modules/routes'),
-    events        = require('./commons/channels/events'),
     AppController;
 
 AppController = Marionette.Object.extend({

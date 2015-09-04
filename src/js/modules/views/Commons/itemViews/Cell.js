@@ -1,8 +1,7 @@
 var TrendsCellItemView = require('../../Trends/itemViews/TrendsCell'),
-menu = require('../../../../commons/channels/menu'),
-trendsChannel = require('../../../../commons/channels/trends'),
-appConfig = require('../../../../config'),
-Cell;
+    menuChannel = require('../../../../commons/channels/menu'),
+    appConfig = require('../../../../config'),
+    Cell;
 
 Cell = Marionette.ItemView.extend({
   template: _.template(''),
@@ -12,14 +11,14 @@ Cell = Marionette.ItemView.extend({
   },
 
   onChangeSize: function() {
-    var size = menu.reqres.request('size');
+    var size = menuChannel.reqres.request('size');
     this.$el.removeClass();
     this.$el.addClass('cell cell-' + size.cols + '-' + size.rows);
   },
 
   onRender: function() {
-    var trends = trendsChannel.reqres.request('trends'),
-    trendsCellItemView;
+    var trends = menuChannel.reqres.request('trends'),
+        trendsCellItemView;
 
     trendsCellItemView = new TrendsCellItemView({ collection: trends });
 

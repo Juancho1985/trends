@@ -1,6 +1,6 @@
 var menuChannel = require('../commons/channels/menu'),
     appConfig = require('../config'),
-    trendsChannel = require('../commons/channels/trends'),
+    menuChannel = require('../commons/channels/menu'),
     MenuModel;
 
 MenuModel = Backbone.Model.extend({
@@ -39,7 +39,7 @@ MenuModel = Backbone.Model.extend({
     this.set('rows', rows);
     this.set('cols', cols);
 
-    trendsChannel.vent.trigger('grid:changed', this.toJSON());
+    menuChannel.vent.trigger('grid:changed', this.toJSON());
   }
 });
 module.exports = MenuModel;
