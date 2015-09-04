@@ -1,0 +1,12 @@
+$columns: 6;
+@mixin col-x-list {
+  @for $i from 1 through $columns - 1 {
+    @for $j from 1 through $columns - 1 {
+      .cell-#{$i}-#{$j} {
+        height: 100%/$j;
+        width: 100%/$i;
+      }
+    }
+  }
+}
+@include col-x-list;
