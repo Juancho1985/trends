@@ -41,8 +41,3 @@ $ gulp karma
 Juan José García
 Sebastián Crespo
 
-Confluence links to factory documentation
-
-## Licencia
-
-Etermax
