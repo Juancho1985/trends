@@ -1,7 +1,7 @@
 $columns: 6;
 @mixin col-x-list {
-  @for $i from 1 through $columns - 1 {
-    @for $j from 1 through $columns - 1 {
+  @for $i from 1 through $columns {
+    @for $j from 1 through $columns {
       .cell-#{$i}-#{$j} {
         height: 100%/$j;
         width: 100%/$i;
