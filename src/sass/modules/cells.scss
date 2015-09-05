@@ -5,6 +5,9 @@ $columns: 6;
       .cell-#{$i}-#{$j} {
         height: 100%/$j;
         width: 100%/$i;
+        h1 {
+          font-size: 6em/$i;
+        }
       }
     }
   }
