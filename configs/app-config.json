@@ -1,19 +1,11 @@
 {
   "global": {
     "version": "0.1",
-    "api_url": "http://localhost:3000"
+    "api_url": "http://localhost:3000/development"
   },
   "production": {
     "environment": "production",
     "api_url": "http://localhost:3000/production/"
-  },
-  "testing": {
-    "environment": "test",
-    "api_url": "http://localhost:3000"
-  },
-  "staging": {
-    "environment": "staging",
-    "api_url": "http://localhost:3000/staging/"
   },
   "development": {
     "environment": "development",
