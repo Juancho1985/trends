@@ -16,25 +16,24 @@ $ gem install bootstrap-sass
 Development
 $ gulp
 
-Test
-$ gulp test
-
-Staging
-$ gulp staging
-
 Production
 $ gulp production
 
 ## API
 
-Not defined, only front end with mock values.
+Not defined, only front end with mock values. You can find de mock in sr/js/mock
+You can define the api you need for production and development in the following
+files:
+/configs/app-config.json
+
+Then remove the mock, and add a promise to get those values in the way you need,
+set the collection with the values, and thats it :).
 
 ## Tests
 
-Tests runs with mocha, sinon, chai and karma. Expect is the one we use in chai.
-
-To run tests
-$ gulp karma
+Enviroment for tests is added, but there is not test yet.
+If you define some test just run gulp karma and you will be able to
+test what you need.
 
 ## Contributors
 
