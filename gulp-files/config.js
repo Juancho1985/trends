@@ -86,23 +86,5 @@ module.exports = {
     jsSrc  : src + '/js/main.js',
     dest   : dest + '/js/',
     api    : appConfig.production.api_url
-  },
-  /**
-   * Staging configuration
-   */
-  staging: {
-    cssSrc : src + '/css/*.scss',
-    jsSrc  : src + '/js/app.js',
-    dest   : dest + '/js/',
-    api    : appConfig.staging.api_url
-  },
-  /**
-   * Testing configuration
-   */
-  testing: {
-    cssSrc : src + '/css/*.scss',
-    jsSrc  : src + '/js/app.js',
-    dest   : dest + '/js/',
-    api    : appConfig.testing.api_url
   }
 };
