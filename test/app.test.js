@@ -1,2 +1,2 @@
-var relations = require('../lib/javascripts/entities/enums/relations');
+var appController = require('../lib/js/controller');
 
