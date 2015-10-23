@@ -1,4 +1,5 @@
 before_script:
+    - npm cache clean
     - npm install
     - npm install -g gulp
 script: gulp production
