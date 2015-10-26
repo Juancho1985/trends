@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/jotaoncode/trends.svg?branch=static-server)](https://travis-ci.org/jotaoncode/trends)
 ## Synopsis
 
 Trends cards, an application to show trends by giving the effect you choose.
