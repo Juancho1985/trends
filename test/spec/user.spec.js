@@ -1,7 +1,13 @@
-describe("La entidad User debe: ", function () {
-  var User = require('./user');
-  it("Crear usuarios para una origanización.", function () {
+'use strict';
+var expect = require('expect.js');
+var user = require('../../user');
+
+describe("Juancho", function () {
+  it("name", function (done) {
+    expect(user.name).to.be('juancho');
+    done();
   });
-  it("Actualizar usuarios de una organización", function () {
+  it("age", function () {
+    expect(user.age).to.be(30);
   });
 });
