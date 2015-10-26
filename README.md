@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jotaoncode/trends.svg?branch=static-server)](https://travis-ci.org/jotaoncode/trends)
+[![Build Status](https://api.travis-ci.org/jotaoncode/trends.svg)](https://api.travis-ci.org/jotaoncode/trends.svg)
 ## Synopsis
 
 Trends cards, an application to show trends by giving the effect you choose.
