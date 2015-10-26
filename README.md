@@ -1,4 +1,5 @@
 [![Build Status](https://api.travis-ci.org/jotaoncode/trends.svg)](https://api.travis-ci.org/jotaoncode/trends.svg)
+
 [![Coverage Status](https://coveralls.io/repos/jotaoncode/trends/badge.svg?branch=master&service=github)](https://coveralls.io/repos/jotaoncode/trends?branch=master)
 
 ## Synopsis
