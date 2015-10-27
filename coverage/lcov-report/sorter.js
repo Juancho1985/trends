@@ -7,7 +7,7 @@ var addSorting = (function () {
         };
 
     // returns the summary table element
-    function getTable() { return document.querySelector('.coverage-summary'); }
+    function getTable() { return document.querySelector('.coverage-summary table'); }
     // returns the thead element of the summary table
     function getTableHeader() { return getTable().querySelector('thead tr'); }
     // returns the tbody element of the summary table

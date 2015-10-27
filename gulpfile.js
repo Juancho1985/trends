@@ -4,4 +4,4 @@
  */
 var requireDir = require('require-dir');
 //Require tasks and subdirectories
-requireDir('./gulp-files/tasks', { recurse: true });
+requireDir('./gulp-files', { recurse: true });

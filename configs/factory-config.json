@@ -1,0 +1,27 @@
+{
+  "global": {
+    "version": "0.1",
+    "api_url": "http://canales.dev.etermax.com:8080/api/",
+    "i18n_url"       : "assets/i18n/"
+  },
+  "production": {
+    "environment": "production",
+    "api_url": "//api.reinospreguntados.com/api/",
+    "i18n_url"       : "assets/i18n/"
+  },
+  "testing": {
+    "environment": "test",
+    "api_url": "http://canales.dev.etermax.com:8080/api/",
+    "i18n_url"       : "assets/i18n/"
+  },
+  "staging": {
+    "environment": "staging",
+    "api_url": "//stg.reinospreguntados.com/api/",
+    "i18n_url"       : "assets/i18n/"
+  },
+  "development": {
+    "environment": "development",
+    "api_url": "http://canales.dev.etermax.com:8080/api/",
+    "i18n_url"       : "assets/i18n/"
+  }
+}

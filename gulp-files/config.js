@@ -1,6 +1,6 @@
 var dest      = "./dist",
     src       = './src',
-    appConfig = require('../configs/app-config.json');
+    appConfig = require('../configs/factory-config.json');
 
 /**
  * Main configuration for gulp.
@@ -15,6 +15,37 @@ module.exports = {
     }
   },
   /**
+   * Jshint
+   */
+  jshint: {
+    src  : src + '/js/**/*.js'
+  },
+  /**
+   * JSCS
+   */
+  jscs: {
+    src  : src + '/js/**/*.js'
+  },
+  /**
+   * Sass
+   */
+  sass: {
+    src      : src + "/sass/**/custom.scss",
+    srcWatch : src + "/sass/**/*.scss",
+    dest     : dest + "/css",
+    settings : {
+      indentedSyntax: true
+    }
+  },
+  /**
+   * Templates
+   * (like import reference)
+   */
+  templates: {
+    src  : src + "/assets/templates/**",
+    dest : dest + "/assets/templates"
+  },
+  /**
    * Fonts
    */
   fonts: {
@@ -22,15 +53,11 @@ module.exports = {
     dest : dest + "/assets/fonts"
   },
   /**
-   * Sass
+   * Assets
    */
-  sass: {
-    src      : src + "/sass/custom.scss",
-    srcWatch : src + "/sass/**/*.scss",
-    dest     : dest + "/css",
-    settings : {
-      indentedSyntax: true
-    }
+  i18n: {
+    src  : src + "/assets/i18n/**",
+    dest : dest + "/assets/i18n"
   },
   /**
    * Images
@@ -62,10 +89,24 @@ module.exports = {
       dest       : dest + '/js/',
       outputName : 'vendors.js',
       // list of modules to make require-able externally
-      require    : ['jquery', 'backbone/node_modules/underscore']
+      require    : ['jquery', './node_modules/underscore/underscore.js']
       // See https://github.com/greypants/gulp-starter/issues/87 for note about
       // why this is 'backbone/node_modules/underscore' and not 'underscore'
     }]
+  },
+  /**
+   * Development configuration
+   * src files are the entire folder being watched
+   * and destination is defined in each case
+   */
+  default: {
+    cssSrc : src + '/css/*.scss',
+    jsSrc  : src + '/js/main.js',
+    dest   : '../../' + dest + '/js/',
+    api    : appConfig.development.api_url,
+    i18n   : appConfig.staging.i18n_url,
+    watch  : true,
+    debug  : true
   },
   /**
    * Development configuration
@@ -76,7 +117,20 @@ module.exports = {
     cssSrc : src + '/css/*.scss',
     jsSrc  : src + '/js/main.js',
     dest   : dest + '/js/',
-    api    : appConfig.development.api_url
+    api    : appConfig.development.api_url,
+    i18n   : appConfig.staging.i18n_url
+  },
+  /**
+   * Development configuration
+   * src files are the entire folder being watched
+   * and destination is defined in each case
+   */
+  developmentNoWatch: {
+    cssSrc : src + '/css/*.scss',
+    jsSrc  : src + '/js/main.js',
+    dest   : dest + '/js/',
+    api    : appConfig.development.api_url,
+    i18n   : appConfig.staging.i18n_url
   },
   /**
    * Production configuration
@@ -85,6 +139,17 @@ module.exports = {
     cssSrc : src + '/css/*.scss',
     jsSrc  : src + '/js/main.js',
     dest   : dest + '/js/',
-    api    : appConfig.production.api_url
+    api    : appConfig.production.api_url,
+    i18n   : appConfig.staging.i18n_url
+  },
+  /**
+   * Staging configuration
+   */
+  staging: {
+    cssSrc : src + '/css/*.scss',
+    jsSrc  : src + '/js/main.js',
+    dest   : dest + '/js/',
+    api    : appConfig.staging.api_url,
+    i18n   : appConfig.staging.i18n_url
   }
 };
