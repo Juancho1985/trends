@@ -39,7 +39,7 @@ module.exports = function(config) {
       dir: 'coverage/',
       reporters: [
         { type: 'html' },
-        { type: 'lcovonly' }
+        { type: 'lcovonly', dir: 'coverage/'}
       ]
     },
 

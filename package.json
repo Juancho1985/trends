@@ -105,7 +105,7 @@
     "test": "rm -rf coverage && karma start karma.local.conf.js",
     "test-sl": "karma start karma.saucelabs.conf.js",
     "ci": "npm run test && npm run test-sl",
-    "coveralls": "cat coverage/Phantom*/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "coveralls": "cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "license": "MIT"
 }
