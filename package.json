@@ -105,7 +105,6 @@
     "yargs": "~3.29.0"
   },
   "scripts": {
-    "babel": "babel src/ --out-dir build --watch",
     "test": "rm -rf coverage && karma start karma.local.conf.js",
     "test-sl": "karma start karma.saucelabs.conf.js",
     "ci": "npm run test && npm run test-sl",
