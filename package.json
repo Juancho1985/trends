@@ -99,7 +99,6 @@
     "moment": "~2.10.6",
     "q": "^1.4.1",
     "typed.js": "git://github.com/mattboldt/typed.js.git",
-    "underscore": "^1.8.3",
     "yargs": "~3.29.0"
   },
   "scripts": {
