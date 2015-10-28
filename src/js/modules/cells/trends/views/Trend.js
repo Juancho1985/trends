@@ -1,4 +1,4 @@
-var trendTemplate = require('../templates/trend'),
+var trendTemplate = require('../templates/trend.hbs'),
 Trend;
 
 Trend = Marionette.ItemView.extend({

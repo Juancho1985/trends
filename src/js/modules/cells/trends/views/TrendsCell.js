@@ -1,6 +1,6 @@
 var TrendItemView = require('./Trend'),
 appConfig = require('../../../../config'),
-cellTemplate = require('../../templates/cell'),
+cellTemplate = require('../../templates/cell.hbs'),
 TrendsCell;
 
 TrendsCell = Marionette.ItemView.extend({

@@ -1,0 +1,311 @@
+20151028 143241.179 [03715] Sauce Connect 4.3.11, build 1757 2b421bb
+20151028 143241.180 [03715] Using CA certificate bundle /etc/ssl/certs/ca-certificates.crt.
+20151028 143241.180 [03715] Using CA certificate verify path /etc/ssl/certs.
+20151028 143241.180 [03715] *** WARNING: open file limit 4096 is too low!
+20151028 143241.180 [03715] *** Sauce Labs recommends setting it to at least 8000.
+20151028 143241.180 [03715] Trying to autodetect proxy settings
+20151028 143241.180 [03715] Starting up; pid 3715
+20151028 143241.180 [03715] Command line arguments: /home/juan/projects/backup/trends/node_modules/karma-sauce-launcher/node_modules/sauce-connect-launcher/sc/sc-4.3.11-linux/bin/sc -P 5757 --logfile sauce-connect.log -u garcia_juan_j -k **** --tunnel-identifier karma1446053556 --readyfile /tmp/sc-launcher-readyfile
+20151028 143241.180 [03715] Using no proxy for connecting to Sauce Labs REST API.
+20151028 143241.185 [03715] Resolving saucelabs.com to 162.222.75.243 took 4 ms.
+20151028 143242.047 [03715] PROXY *** scproxy started ***
+20151028 143242.048 [03715] PROXY found DNS server 127.0.1.1
+20151028 143242.097 [03715] Started scproxy on port 51411.
+20151028 143242.097 [03715] Please wait for 'you may start your tests' to start your tests.
+20151028 143242.097 [03715] Starting secure remote tunnel VM...
+20151028 143248.828 [03715] Secure remote tunnel VM provisioned.
+20151028 143248.828 [03715] Tunnel ID: e1976005512d4e84bf0c1d5d0825c689
+20151028 143249.769 [03715] Secure remote tunnel VM is now: booting
+20151028 143251.723 [03715] Secure remote tunnel VM is now: running
+20151028 143251.724 [03715] Remote tunnel host is: maki81103.miso.saucelabs.com
+20151028 143251.724 [03715] Using no proxy for connecting to tunnel VM.
+20151028 143251.899 [03715] Resolving tunnel hostname to 162.222.75.7 took 175ms.
+20151028 143251.899 [03715] Starting Selenium listener...
+20151028 143251.899 [03715] Establishing secure TLS connection to tunnel...
+20151028 143251.900 [03715] [EVDNS] Added nameserver 127.0.1.1:53 as 0x7f761c004c70
+20151028 143251.901 [03715] Selenium listener started on port 5757.
+20151028 143252.140 [03715] MAIN connecting to KGP server maki81103.miso.saucelabs.com took 2760 ms
+20151028 143252.144 [03715] MAIN warning, failed to set KGP bufferevent priority to 0
+20151028 143254.180 [03715] Sauce Connect is up, you may start your tests.
+20151028 143302.112 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143302.112 [03715] PROXY 127.0.0.1:50286 -> GET http://localhost:9876/?id=47997665 (339 bytes)
+20151028 143302.126 [03715] PROXY 127.0.0.1:50286 <- 200 localhost:9876 (2801 bytes)
+20151028 143302.332 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143302.332 [03715] PROXY 127.0.0.1:50288 -> GET http://localhost:9876/?id=13410091 (372 bytes)
+20151028 143302.335 [03715] PROXY 127.0.0.1:50288 <- 200 localhost:9876 (2801 bytes)
+20151028 143302.347 [03715] PROXY 127.0.0.1:50286 -> GET http://localhost:9876/socket.io/socket.io.js (392 bytes)
+20151028 143302.389 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143302.390 [03715] PROXY 127.0.0.1:50290 -> GET http://localhost:9876/karma.js (378 bytes)
+20151028 143302.391 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143302.391 [03715] PROXY 127.0.0.1:50292 -> GET http://localhost:9876/?id=43178933 (430 bytes)
+20151028 143302.577 [03715] PROXY 127.0.0.1:50288 -> GET http://localhost:9876/socket.io/socket.io.js (369 bytes)
+20151028 143302.579 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143302.579 [03715] PROXY 127.0.0.1:50294 -> GET http://localhost:9876/karma.js (355 bytes)
+20151028 143302.590 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143302.590 [03715] PROXY 127.0.0.1:50296 -> GET http://localhost:9876/favicon.ico (373 bytes)
+20151028 143302.685 [03715] PROXY 127.0.0.1:50286 <- 200 localhost:9876 (97345 bytes)
+20151028 143302.688 [03715] PROXY 127.0.0.1:50288 <- 200 localhost:9876 (97345 bytes)
+20151028 143302.688 [03715] PROXY 127.0.0.1:50292 <- 200 localhost:9876 (2801 bytes)
+20151028 143302.689 [03715] PROXY 127.0.0.1:50294 <- 200 localhost:9876 (11834 bytes)
+20151028 143302.699 [03715] PROXY 127.0.0.1:50290 <- 200 localhost:9876 (11834 bytes)
+20151028 143302.706 [03715] PROXY 127.0.0.1:50296 <- 200 localhost:9876 (5579 bytes)
+20151028 143305.109 [03715] PROXY 127.0.0.1:50292 -> GET http://localhost:9876/socket.io/socket.io.js (416 bytes)
+20151028 143305.110 [03715] PROXY 127.0.0.1:50288 -> GET http://localhost:9876/karma.js (402 bytes)
+20151028 143305.111 [03715] PROXY 127.0.0.1:50292 <- 200 localhost:9876 (97345 bytes)
+20151028 143305.111 [03715] PROXY 127.0.0.1:50288 <- 200 localhost:9876 (11834 bytes)
+20151028 143305.258 [03715] PROXY 127.0.0.1:50294 -> GET http://localhost:9876/socket.io/1/?t=1446053585055 (433 bytes)
+20151028 143305.264 [03715] PROXY 127.0.0.1:50294 <- 200 localhost:9876 (219 bytes)
+20151028 143305.325 [03715] PROXY 127.0.0.1:50296 -> GET http://localhost:9876/socket.io/1/?t=1446053584434 (366 bytes)
+20151028 143305.327 [03715] PROXY 127.0.0.1:50296 <- 200 localhost:9876 (219 bytes)
+20151028 143305.414 [03715] PROXY 127.0.0.1:50290 -> GET http://localhost:9876/favicon.ico (282 bytes)
+20151028 143305.415 [03715] PROXY 127.0.0.1:50290 <- 200 localhost:9876 (9055 bytes)
+20151028 143306.640 [03715] PROXY 127.0.0.1:50290 -> GET http://localhost:9876/socket.io/1/?t=1446053584448 (420 bytes)
+20151028 143306.641 [03715] PROXY 127.0.0.1:50290 <- 200 localhost:9876 (219 bytes)
+20151028 143306.729 [03715] PROXY 127.0.0.1:50294 -> GET http://localhost:9876/favicon.ico (360 bytes)
+20151028 143306.731 [03715] PROXY 127.0.0.1:50294 <- 200 localhost:9876 (9055 bytes)
+20151028 143316.598 [03715] PROXY 127.0.0.1:50294 -> GET http://localhost:9876/socket.io/1/xhr-polling/mtxrD0M37d4yBi8ggihN?t=1446053596538 (465 bytes)
+20151028 143316.599 [03715] PROXY 127.0.0.1:50290 -> GET http://localhost:9876/socket.io/1/xhr-polling/YYvfzy3BQ37u9s0VgihO?t=1446053595711 (398 bytes)
+20151028 143316.605 [03715] PROXY 127.0.0.1:50294 <- 200 localhost:9876 (143 bytes)
+20151028 143316.609 [03715] PROXY 127.0.0.1:50290 <- 200 localhost:9876 (143 bytes)
+20151028 143316.838 [03715] PROXY 127.0.0.1:50292 -> GET http://localhost:9876/socket.io/1/xhr-polling/mtxrD0M37d4yBi8ggihN?t=1446053596780 (465 bytes)
+20151028 143316.873 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143316.873 [03715] PROXY 127.0.0.1:50303 -> POST http://localhost:9876/socket.io/1/xhr-polling/mtxrD0M37d4yBi8ggihN?t=1446053596780 (670 bytes)
+20151028 143316.875 [03715] PROXY 127.0.0.1:50303 <- 200 localhost:9876 (141 bytes)
+20151028 143316.893 [03715] PROXY 127.0.0.1:50292 <- 200 localhost:9876 (243 bytes)
+20151028 143317.061 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143317.061 [03715] PROXY 127.0.0.1:50305 -> POST http://localhost:9876/socket.io/1/xhr-polling/YYvfzy3BQ37u9s0VgihO?t=1446053596178 (626 bytes)
+20151028 143317.061 [03715] PROXY 127.0.0.1:50296 -> GET http://localhost:9876/socket.io/1/xhr-polling/YYvfzy3BQ37u9s0VgihO?t=1446053596179 (398 bytes)
+20151028 143317.063 [03715] PROXY 127.0.0.1:50296 <- 200 localhost:9876 (362 bytes)
+20151028 143317.065 [03715] PROXY 127.0.0.1:50305 <- 200 localhost:9876 (141 bytes)
+20151028 143317.152 [03715] PROXY 127.0.0.1:50288 -> GET http://localhost:9876/socket.io/1/xhr-polling/i1bp78uR_annsYIogihP?t=1446053594932 (452 bytes)
+20151028 143317.154 [03715] PROXY 127.0.0.1:50288 <- 200 localhost:9876 (143 bytes)
+20151028 143317.293 [03715] PROXY 127.0.0.1:50292 -> GET http://localhost:9876/socket.io/1/xhr-polling/mtxrD0M37d4yBi8ggihN?t=1446053597231 (465 bytes)
+20151028 143317.295 [03715] PROXY 127.0.0.1:50292 <- 200 localhost:9876 (708 bytes)
+20151028 143317.526 [03715] PROXY 127.0.0.1:50288 -> GET http://localhost:9876/socket.io/1/xhr-polling/YYvfzy3BQ37u9s0VgihO?t=1446053596643 (398 bytes)
+20151028 143317.527 [03715] PROXY 127.0.0.1:50288 <- 200 localhost:9876 (598 bytes)
+20151028 143317.530 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143317.530 [03715] PROXY 127.0.0.1:50307 -> POST http://localhost:9876/socket.io/1/xhr-polling/i1bp78uR_annsYIogihP?t=1446053595354 (714 bytes)
+20151028 143317.530 [03715] PROXY 127.0.0.1:50296 -> GET http://localhost:9876/socket.io/1/xhr-polling/i1bp78uR_annsYIogihP?t=1446053595354 (452 bytes)
+20151028 143317.532 [03715] PROXY 127.0.0.1:50307 <- 200 localhost:9876 (233 bytes)
+20151028 143317.533 [03715] PROXY 127.0.0.1:50296 <- 200 localhost:9876 (394 bytes)
+20151028 143317.768 [03715] PROXY 127.0.0.1:50292 -> GET http://localhost:9876/context.html (419 bytes)
+20151028 143317.768 [03715] PROXY 127.0.0.1:50303 -> GET http://localhost:9876/socket.io/1/xhr-polling/mtxrD0M37d4yBi8ggihN?t=1446053597702 (465 bytes)
+20151028 143317.770 [03715] PROXY 127.0.0.1:50303 <- 200 localhost:9876 (664 bytes)
+20151028 143317.773 [03715] PROXY 127.0.0.1:50292 <- 200 localhost:9876 (2620 bytes)
+20151028 143317.780 [03715] PROXY 127.0.0.1:50307 -> GET http://localhost:9876/context.html (386 bytes)
+20151028 143317.782 [03715] PROXY 127.0.0.1:50307 <- 200 localhost:9876 (2620 bytes)
+20151028 143317.829 [03715] PROXY 127.0.0.1:50288 -> GET http://localhost:9876/socket.io/1/xhr-polling/YYvfzy3BQ37u9s0VgihO?t=1446053596888 (398 bytes)
+20151028 143317.831 [03715] PROXY 127.0.0.1:50288 <- 200 localhost:9876 (664 bytes)
+20151028 143318.023 [03715] PROXY 127.0.0.1:50303 -> GET http://localhost:9876/socket.io/1/xhr-polling/i1bp78uR_annsYIogihP?t=1446053595835 (452 bytes)
+20151028 143318.025 [03715] PROXY 127.0.0.1:50303 <- 200 localhost:9876 (493 bytes)
+20151028 143318.027 [03715] PROXY 127.0.0.1:50296 -> GET http://localhost:9876/socket.io/1/xhr-polling/mtxrD0M37d4yBi8ggihN?t=1446053597953 (465 bytes)
+20151028 143318.045 [03715] PROXY 127.0.0.1:50292 -> GET http://localhost:9876/base/node_modules/mocha/mocha.js?e2869adc1f343c52a99a2c23eaa29bb493769d13 (418 bytes)
+20151028 143318.047 [03715] PROXY 127.0.0.1:50286 -> GET http://localhost:9876/base/node_modules/karma-mocha/lib/adapter.js?3664759c75e6f4e496fef20ad115ce8233a0f7b5 (430 bytes)
+20151028 143318.048 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143318.048 [03715] PROXY 127.0.0.1:50309 -> GET http://localhost:9876/base/dist/js/vendors.js?6ecc7ed803276e8a26d0aaef5af24333b24d6074 (409 bytes)
+20151028 143318.048 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143318.048 [03715] PROXY 127.0.0.1:50310 -> GET http://localhost:9876/absolute/tmp/37c6e26c418c7e34b1d67eb84c32fa55.browserify?28e2fbcf7243cbf39ed171454e93a4b6bd87ea45 (442 bytes)
+20151028 143318.049 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143318.049 [03715] PROXY 127.0.0.1:50311 -> GET http://localhost:9876/base/test/spec/menu.test.js?d264d486d823399c35decedd2f3107944b6c0c32 (413 bytes)
+20151028 143318.050 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143318.050 [03715] PROXY 127.0.0.1:50312 -> GET http://localhost:9876/base/test/spec/menuView.test.js?d9cbf96a7c62accc5efc0cbc32a28fbaedf499ed (417 bytes)
+20151028 143318.056 [03715] PROXY 127.0.0.1:50292 <- 200 localhost:9876 (314622 bytes)
+20151028 143318.056 [03715] PROXY 127.0.0.1:50286 <- 200 localhost:9876 (4349 bytes)
+20151028 143318.119 [03715] PROXY 127.0.0.1:50311 <- 200 localhost:9876 (281 bytes)
+20151028 143318.120 [03715] PROXY 127.0.0.1:50312 <- 200 localhost:9876 (285 bytes)
+20151028 143318.120 [03715] PROXY 127.0.0.1:50310 <- 200 localhost:9876 (304821 bytes)
+20151028 143318.132 [03715] PROXY 127.0.0.1:50309 <- 200 localhost:9876 (3576025 bytes)
+20151028 143318.269 [03715] PROXY 127.0.0.1:50288 -> GET http://localhost:9876/base/node_modules/mocha/mocha.js?e2869adc1f343c52a99a2c23eaa29bb493769d13 (441 bytes)
+20151028 143318.269 [03715] PROXY 127.0.0.1:50307 -> GET http://localhost:9876/base/node_modules/karma-mocha/lib/adapter.js?3664759c75e6f4e496fef20ad115ce8233a0f7b5 (453 bytes)
+20151028 143318.275 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143318.275 [03715] PROXY 127.0.0.1:50317 -> GET http://localhost:9876/absolute/tmp/37c6e26c418c7e34b1d67eb84c32fa55.browserify?28e2fbcf7243cbf39ed171454e93a4b6bd87ea45 (465 bytes)
+20151028 143318.276 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143318.276 [03715] PROXY 127.0.0.1:50318 -> GET http://localhost:9876/base/dist/js/vendors.js?6ecc7ed803276e8a26d0aaef5af24333b24d6074 (432 bytes)
+20151028 143318.276 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143318.276 [03715] PROXY 127.0.0.1:50319 -> GET http://localhost:9876/base/test/spec/menu.test.js?d264d486d823399c35decedd2f3107944b6c0c32 (436 bytes)
+20151028 143318.277 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143318.277 [03715] PROXY 127.0.0.1:50320 -> GET http://localhost:9876/base/test/spec/menuView.test.js?d9cbf96a7c62accc5efc0cbc32a28fbaedf499ed (440 bytes)
+20151028 143318.278 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143318.278 [03715] PROXY 127.0.0.1:50321 -> GET http://localhost:9876/socket.io/1/xhr-polling/YYvfzy3BQ37u9s0VgihO?t=1446053597377 (398 bytes)
+20151028 143318.278 [03715] PROXY 127.0.0.1:50307 <- 200 localhost:9876 (4349 bytes)
+20151028 143318.279 [03715] PROXY 127.0.0.1:50288 <- 200 localhost:9876 (314622 bytes)
+20151028 143318.282 [03715] PROXY 127.0.0.1:50317 <- 200 localhost:9876 (304821 bytes)
+20151028 143318.295 [03715] PROXY 127.0.0.1:50303 -> GET http://localhost:9876/socket.io/1/xhr-polling/i1bp78uR_annsYIogihP?t=1446053596115 (452 bytes)
+20151028 143318.296 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143318.296 [03715] PROXY 127.0.0.1:50327 -> GET http://localhost:9876/context.html (477 bytes)
+20151028 143318.330 [03715] PROXY 127.0.0.1:50319 <- 200 localhost:9876 (281 bytes)
+20151028 143318.331 [03715] PROXY 127.0.0.1:50320 <- 200 localhost:9876 (285 bytes)
+20151028 143318.334 [03715] PROXY 127.0.0.1:50327 <- 200 localhost:9876 (2620 bytes)
+20151028 143318.343 [03715] PROXY 127.0.0.1:50318 <- 200 localhost:9876 (3576025 bytes)
+20151028 143322.625 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143323.624 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143324.627 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143325.631 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143326.632 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143327.635 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143328.635 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143329.636 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143330.636 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143330.819 [03715] PROXY 127.0.0.1:50310 -> GET https://iecvlist.microsoft.com/ie11blocklist/1401746408/versionlist.xml (344 bytes)
+20151028 143330.820 [03715] PROXY 127.0.0.1:50312 -> GET https://r20swj13mr.microsoft.com/ieblocklist/v1/urlblockindex.bin (395 bytes)
+20151028 143330.862 [03715] PROXY resolved 'r20swj13mr.microsoft.com' to '93.184.215.200'
+20151028 143330.876 [03715] PROXY 127.0.0.1:50311 -> GET https://iecvlist.microsoft.com/ie11blocklist/1401746408/versionlist.xml (344 bytes)
+20151028 143330.905 [03715] PROXY resolved 'iecvlist.microsoft.com' to '93.184.215.200'
+20151028 143331.600 [03715] PROXY 127.0.0.1:50312 <- 200 r20swj13mr.microsoft.com:443 (441 bytes)
+20151028 143331.605 [03715] PROXY 127.0.0.1:50311 <- 304 iecvlist.microsoft.com:443 (365 bytes)
+20151028 143331.634 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143332.638 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143332.753 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143332.753 [03715] PROXY 127.0.0.1:50334 -> POST http://localhost:9876/socket.io/1/xhr-polling/mtxrD0M37d4yBi8ggihN?t=1446053612701 (584 bytes)
+20151028 143332.754 [03715] PROXY 127.0.0.1:50334 <- 200 localhost:9876 (141 bytes)
+20151028 143333.639 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143334.640 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143335.638 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143336.642 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143336.911 [03715] PROXY 127.0.0.1:50327 -> GET http://localhost:9876/base/dist/js/vendors.js?6ecc7ed803276e8a26d0aaef5af24333b24d6074 (456 bytes)
+20151028 143336.973 [03715] PROXY 127.0.0.1:50327 <- 200 localhost:9876 (3576025 bytes)
+20151028 143337.643 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143338.030 [03715] PROXY 127.0.0.1:50296 <- 200 localhost:9876 (143 bytes)
+20151028 143338.334 [03715] PROXY 127.0.0.1:50321 <- 200 localhost:9876 (143 bytes)
+20151028 143338.334 [03715] PROXY 127.0.0.1:50303 <- 200 localhost:9876 (143 bytes)
+20151028 143338.647 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143339.650 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143340.653 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143340.750 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143340.750 [03715] PROXY 127.0.0.1:50339 -> POST http://localhost:9876/socket.io/1/xhr-polling/mtxrD0M37d4yBi8ggihN?t=1446053620703 (1104 bytes)
+20151028 143340.752 [03715] PROXY 127.0.0.1:50339 <- 200 localhost:9876 (141 bytes)
+20151028 143340.967 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143340.971 [03715] PROXY 127.0.0.1:50343 -> POST http://localhost:9876/socket.io/1/xhr-polling/YYvfzy3BQ37u9s0VgihO?t=1446053620047 (518 bytes)
+20151028 143340.972 [03715] PROXY 127.0.0.1:50343 <- 200 localhost:9876 (141 bytes)
+20151028 143341.660 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143342.662 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143343.663 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143344.663 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143345.662 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143346.664 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143347.664 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143348.666 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143349.667 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143350.028 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143350.028 [03715] PROXY 127.0.0.1:50348 -> POST http://localhost:9876/socket.io/1/xhr-polling/YYvfzy3BQ37u9s0VgihO?t=1446053629138 (1038 bytes)
+20151028 143350.028 [03715] PROXY 127.0.0.1:50321 -> GET http://localhost:9876/socket.io/1/xhr-polling/YYvfzy3BQ37u9s0VgihO?t=1446053629140 (398 bytes)
+20151028 143350.030 [03715] PROXY 127.0.0.1:50321 <- 200 localhost:9876 (394 bytes)
+20151028 143350.031 [03715] PROXY 127.0.0.1:50348 <- 200 localhost:9876 (141 bytes)
+20151028 143350.221 [03715] PROXY resolved 'albert.apple.com' to '17.149.240.70'
+20151028 143350.248 [03715] PROXY 127.0.0.1:50352 -> POST https://albert.apple.com/deviceservices/deviceActivation?device=MacOS (7689 bytes)
+20151028 143350.262 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143350.262 [03715] PROXY 127.0.0.1:50354 -> POST http://localhost:9876/socket.io/1/xhr-polling/i1bp78uR_annsYIogihP?t=1446053628053 (585 bytes)
+20151028 143350.264 [03715] PROXY 127.0.0.1:50354 <- 200 localhost:9876 (233 bytes)
+20151028 143350.265 [03715] PROXY 127.0.0.1:50343 -> GET http://localhost:9876/socket.io/1/xhr-polling/i1bp78uR_annsYIogihP?t=1446053628061 (452 bytes)
+20151028 143350.266 [03715] PROXY 127.0.0.1:50343 <- 200 localhost:9876 (664 bytes)
+20151028 143350.274 [03715] PROXY 127.0.0.1:50339 -> GET http://localhost:9876/favicon.ico (360 bytes)
+20151028 143350.276 [03715] PROXY 127.0.0.1:50339 <- 200 localhost:9876 (9055 bytes)
+20151028 143350.470 [03715] PROXY 127.0.0.1:50348 -> GET http://localhost:9876/socket.io/1/xhr-polling/YYvfzy3BQ37u9s0VgihO?t=1446053629601 (398 bytes)
+20151028 143350.471 [03715] PROXY 127.0.0.1:50348 <- 200 localhost:9876 (415 bytes)
+20151028 143350.496 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143350.496 [03715] PROXY 127.0.0.1:50356 -> POST http://localhost:9876/socket.io/1/xhr-polling/i1bp78uR_annsYIogihP?t=1446053628299 (1105 bytes)
+20151028 143350.496 [03715] PROXY 127.0.0.1:50354 -> GET http://localhost:9876/socket.io/1/xhr-polling/i1bp78uR_annsYIogihP?t=1446053628301 (452 bytes)
+20151028 143350.498 [03715] PROXY 127.0.0.1:50356 <- 200 localhost:9876 (233 bytes)
+20151028 143350.498 [03715] PROXY 127.0.0.1:50354 <- 200 localhost:9876 (145 bytes)
+20151028 143350.683 [03715] PROXY 127.0.0.1:50339 -> GET http://localhost:9876/favicon.ico (360 bytes)
+20151028 143350.685 [03715] PROXY 127.0.0.1:50339 <- 200 localhost:9876 (9055 bytes)
+20151028 143350.921 [03715] PROXY 127.0.0.1:50354 -> GET http://localhost:9876/socket.io/1/xhr-polling/YYvfzy3BQ37u9s0VgihO?t=1446053630032 (398 bytes)
+20151028 143350.921 [03715] PROXY 127.0.0.1:50356 -> GET http://localhost:9876/socket.io/1/xhr-polling/i1bp78uR_annsYIogihP?t=1446053628706 (452 bytes)
+20151028 143350.922 [03715] PROXY 127.0.0.1:50354 <- 200 localhost:9876 (394 bytes)
+20151028 143350.923 [03715] PROXY 127.0.0.1:50356 <- 200 localhost:9876 (394 bytes)
+20151028 143351.262 [03715] PROXY 127.0.0.1:50352 <- 200 albert.apple.com:443 (2330 bytes)
+20151028 143351.407 [03715] PROXY 127.0.0.1:50356 -> GET http://localhost:9876/socket.io/1/xhr-polling/i1bp78uR_annsYIogihP?t=1446053629202 (452 bytes)
+20151028 143352.517 [03715] PROXY 127.0.0.1:50352 -> GET http://gsp1.apple.com/pep/gcc (297 bytes)
+20151028 143352.531 [03715] PROXY resolved 'gsp1.apple.com' to '190.55.60.168'
+20151028 143352.561 [03715] PROXY 127.0.0.1:50352 <- 200 gsp1.apple.com:80 (126 bytes)
+20151028 143356.703 [03715] PROXY 127.0.0.1:50352 -> GET http://www.apple.com/ (411 bytes)
+20151028 143356.779 [03715] PROXY resolved 'www.apple.com' to '23.199.119.38'
+20151028 143357.278 [03715] PROXY 127.0.0.1:50352 <- 200 www.apple.com:80 (5283 bytes)
+20151028 143357.986 [03715] PROXY 127.0.0.1:50352 -> GET http://www.apple.com/apple-touch-icon-precomposed.png (365 bytes)
+20151028 143358.539 [03715] PROXY 127.0.0.1:50352 <- 404 www.apple.com:80 (25143 bytes)
+20151028 143358.625 [03715] PROXY resolved 'www.apple.com' to '23.199.119.38'
+20151028 143358.626 [03715] PROXY 127.0.0.1:50354 -> GET http://www.apple.com/apple-touch-icon.png (353 bytes)
+20151028 143359.454 [03715] PROXY 127.0.0.1:50354 <- 200 www.apple.com:80 (4786 bytes)
+20151028 143400.052 [03715] PROXY 127.0.0.1:50354 -> GET http://www.disney.com/ (413 bytes)
+20151028 143400.113 [03715] PROXY resolved 'www.disney.com' to '199.181.131.249'
+20151028 143400.724 [03715] PROXY 127.0.0.1:50354 <- 301 www.disney.com:80 (213 bytes)
+20151028 143401.009 [03715] PROXY resolved 'iecvlist.microsoft.com' to '93.184.215.200'
+20151028 143401.242 [03715] PROXY 127.0.0.1:50354 -> GET http://disney.com/ (405 bytes)
+20151028 143401.350 [03715] PROXY resolved 'disney.com' to '199.181.131.249'
+20151028 143401.541 [03715] PROXY resolved 'www.apple.com' to '23.199.119.38'
+20151028 143401.541 [03715] PROXY 127.0.0.1:50339 -> GET http://www.apple.com/ac/globalnav/2.0/en_US/styles/ac-globalnav.built.css (459 bytes)
+20151028 143401.542 [03715] PROXY resolved 'www.apple.com' to '23.199.119.38'
+20151028 143401.542 [03715] PROXY 127.0.0.1:50348 -> GET http://www.apple.com/ac/globalfooter/2.0/en_US/styles/ac-globalfooter.built.css (465 bytes)
+20151028 143401.552 [03715] PROXY resolved 'www.apple.com' to '23.199.119.38'
+20151028 143401.552 [03715] PROXY 127.0.0.1:50321 -> GET http://www.apple.com/ac/localnav/3.0/styles/ac-localnav.built.css (451 bytes)
+20151028 143401.553 [03715] PROXY resolved 'www.apple.com' to '23.199.119.38'
+20151028 143401.553 [03715] PROXY 127.0.0.1:50311 -> GET http://www.apple.com/wss/fonts/?family=Myriad+Set+Pro&v=1 (441 bytes)
+20151028 143401.788 [03715] PROXY 127.0.0.1:50310 <- 304 iecvlist.microsoft.com:443 (365 bytes)
+20151028 143401.922 [03715] PROXY 127.0.0.1:50339 <- 200 www.apple.com:80 (10628 bytes)
+20151028 143401.953 [03715] PROXY 127.0.0.1:50311 <- 200 www.apple.com:80 (814 bytes)
+20151028 143401.964 [03715] PROXY 127.0.0.1:50348 <- 200 www.apple.com:80 (6050 bytes)
+20151028 143401.971 [03715] PROXY 127.0.0.1:50321 <- 200 www.apple.com:80 (7522 bytes)
+20151028 143402.667 [03715] PROXY 127.0.0.1:50348 -> GET http://www.apple.com/home/styles/promos.css (429 bytes)
+20151028 143402.667 [03715] PROXY 127.0.0.1:50311 -> GET http://www.apple.com/ac/globalnav/2.0/en_US/scripts/ac-globalnav.built.js (444 bytes)
+20151028 143402.667 [03715] PROXY 127.0.0.1:50339 -> GET http://www.apple.com/home/styles/home.css (427 bytes)
+20151028 143402.753 [03715] PROXY 127.0.0.1:50321 -> GET http://www.apple.com/v/home/cc/scripts/head.built.js (423 bytes)
+20151028 143402.870 [03715] PROXY 127.0.0.1:50348 <- 200 www.apple.com:80 (274 bytes)
+20151028 143402.870 [03715] PROXY 127.0.0.1:50339 <- 200 www.apple.com:80 (275 bytes)
+20151028 143403.059 [03715] PROXY 127.0.0.1:50311 <- 200 www.apple.com:80 (36528 bytes)
+20151028 143403.206 [03715] PROXY 127.0.0.1:50321 <- 200 www.apple.com:80 (35263 bytes)
+20151028 143403.206 [03715] PROXY 127.0.0.1:50339 -> GET http://www.apple.com/v/home/cc/scripts/home.built.js (423 bytes)
+20151028 143403.249 [03715] PROXY 127.0.0.1:50348 -> GET http://www.apple.com/ac/globalfooter/2.0/en_US/scripts/ac-globalfooter.built.js (450 bytes)
+20151028 143403.286 [03715] PROXY 127.0.0.1:50354 <- 200 disney.com:80 (102202 bytes)
+20151028 143403.550 [03715] PROXY 127.0.0.1:50348 <- 200 www.apple.com:80 (7652 bytes)
+20151028 143403.625 [03715] PROXY 127.0.0.1:50339 <- 200 www.apple.com:80 (50624 bytes)
+20151028 143403.693 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143403.694 [03715] PROXY 127.0.0.1:50310 -> GET http://localhost:9876/?id=83791174 (464 bytes)
+20151028 143403.695 [03715] PROXY 127.0.0.1:50310 <- 200 localhost:9876 (2801 bytes)
+20151028 143405.157 [03715] PROXY 127.0.0.1:50354 -> GET http://a.dilcdn.com/a/apple-touch-icon-ff35d148d398.png (366 bytes)
+20151028 143406.065 [03715] PROXY 127.0.0.1:50310 -> GET http://localhost:9876/socket.io/socket.io.js (429 bytes)
+20151028 143406.067 [03715] PROXY 127.0.0.1:50310 <- 200 localhost:9876 (97345 bytes)
+20151028 143406.069 [03715] PROXY 127.0.0.1:50334 -> GET http://localhost:9876/karma.js (415 bytes)
+20151028 143406.071 [03715] PROXY 127.0.0.1:50334 <- 200 localhost:9876 (11834 bytes)
+20151028 143409.085 [03715] PROXY 127.0.0.1:50334 -> GET http://localhost:9876/socket.io/1/?t=1446053647873 (433 bytes)
+20151028 143409.087 [03715] PROXY 127.0.0.1:50334 <- 200 localhost:9876 (219 bytes)
+20151028 143411.409 [03715] PROXY 127.0.0.1:50356 <- 200 localhost:9876 (143 bytes)
+20151028 143419.653 [03715] PROXY 127.0.0.1:50356 -> GET http://localhost:9876/socket.io/1/xhr-polling/b_IrLB9uNR2bbErpgihQ?t=1446053658474 (465 bytes)
+20151028 143419.655 [03715] PROXY 127.0.0.1:50356 <- 200 localhost:9876 (143 bytes)
+20151028 143420.096 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143420.096 [03715] PROXY 127.0.0.1:50377 -> POST http://localhost:9876/socket.io/1/xhr-polling/b_IrLB9uNR2bbErpgihQ?t=1446053658920 (753 bytes)
+20151028 143420.096 [03715] PROXY 127.0.0.1:50334 -> GET http://localhost:9876/socket.io/1/xhr-polling/b_IrLB9uNR2bbErpgihQ?t=1446053658921 (465 bytes)
+20151028 143420.099 [03715] PROXY 127.0.0.1:50377 <- 200 localhost:9876 (233 bytes)
+20151028 143420.101 [03715] PROXY 127.0.0.1:50334 <- 200 localhost:9876 (469 bytes)
+20151028 143420.594 [03715] PROXY 127.0.0.1:50334 -> GET http://localhost:9876/socket.io/1/xhr-polling/b_IrLB9uNR2bbErpgihQ?t=1446053659413 (465 bytes)
+20151028 143420.595 [03715] PROXY 127.0.0.1:50334 <- 200 localhost:9876 (568 bytes)
+20151028 143420.856 [03715] PROXY 127.0.0.1:50334 -> GET http://localhost:9876/socket.io/1/xhr-polling/b_IrLB9uNR2bbErpgihQ?t=1446053659675 (465 bytes)
+20151028 143420.897 [03715] PROXY 127.0.0.1:50377 -> GET http://localhost:9876/context.html (479 bytes)
+20151028 143420.901 [03715] PROXY 127.0.0.1:50377 <- 200 localhost:9876 (2620 bytes)
+20151028 143421.336 [03715] PROXY 127.0.0.1:50377 -> GET http://localhost:9876/base/dist/js/vendors.js?6ecc7ed803276e8a26d0aaef5af24333b24d6074 (469 bytes)
+20151028 143421.414 [03715] PROXY 127.0.0.1:50377 <- 200 localhost:9876 (3576025 bytes)
+20151028 143425.697 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143426.697 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143427.696 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143428.696 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143429.698 [03715] KGP warning: no keepalive ack for > 5s
+20151028 143430.185 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143430.185 [03715] PROXY 127.0.0.1:50381 -> POST http://localhost:9876/socket.io/1/xhr-polling/b_IrLB9uNR2bbErpgihQ?t=1446053669010 (598 bytes)
+20151028 143430.188 [03715] PROXY 127.0.0.1:50381 <- 200 localhost:9876 (233 bytes)
+20151028 143430.682 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143430.682 [03715] PROXY 127.0.0.1:50383 -> POST http://localhost:9876/socket.io/1/xhr-polling/b_IrLB9uNR2bbErpgihQ?t=1446053669493 (1118 bytes)
+20151028 143430.683 [03715] PROXY 127.0.0.1:50383 <- 200 localhost:9876 (233 bytes)
+20151028 143430.684 [03715] PROXY 127.0.0.1:50334 <- 200 localhost:9876 (145 bytes)
+20151028 143430.707 [03715] Cleaning up.
+20151028 143431.164 [03715] PROXY 127.0.0.1:50334 -> GET http://localhost:9876/socket.io/1/xhr-polling/b_IrLB9uNR2bbErpgihQ?t=1446053669978 (465 bytes)
+20151028 143431.165 [03715] PROXY 127.0.0.1:50334 <- 200 localhost:9876 (147 bytes)
+20151028 143431.393 [03715] PROXY resolved 'localhost' to '127.0.0.1'
+20151028 143431.393 [03715] PROXY 127.0.0.1:50388 -> POST http://localhost:9876/socket.io/1/xhr-polling/b_IrLB9uNR2bbErpgihQ?t=1446053670209 (559 bytes)
+20151028 143431.397 [03715] PROXY 127.0.0.1:50388 <- 200 localhost:9876 (233 bytes)
+20151028 143431.936 [03715] PROXY 127.0.0.1:50388 -> GET http://localhost:9876/socket.io/1/?t=1446053670739 (433 bytes)
+20151028 143431.937 [03715] PROXY 127.0.0.1:50388 <- 200 localhost:9876 (219 bytes)
+20151028 143432.992 [03715] Shutting down named tunnel karma1446053556 (e1976005512d4e84bf0c1d5d0825c689).
+20151028 143435.197 [03715] PROXY resolved 'a.dilcdn.com' to '8.247.85.162'
+20151028 143435.541 [03715] PROXY 127.0.0.1:50354 <- 200 a.dilcdn.com:80 (8015 bytes)
+20151028 143436.411 [03715] MAIN connecting to KGP server maki81103.miso.saucelabs.com took 266 ms
+20151028 143436.448 [03715] MAIN warning, failed to set KGP bufferevent priority to 0
+20151028 143439.452 [03715] Goodbye.

@@ -1,6 +1,6 @@
 var appConfig = require('../../../config'),
     menuChannel = require('../../../commons/channels/menu'),
-    menuTemplate = require('../templates/menu'),
+    menuTemplate = require('../templates/menu.hbs'),
     Menu;
 
 Menu = Marionette.ItemView.extend({

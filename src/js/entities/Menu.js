@@ -1,6 +1,5 @@
 var menuChannel = require('../commons/channels/menu'),
     appConfig = require('../config'),
-    menuChannel = require('../commons/channels/menu'),
     MenuModel;
 
 MenuModel = Backbone.Model.extend({

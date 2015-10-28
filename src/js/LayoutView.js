@@ -1,6 +1,6 @@
 var template, AppLayout;
 
-template = require('./layout');
+template = require('./layout.hbs');
 /**
  * App Layout
  */
