@@ -80,7 +80,7 @@ module.exports = {
    */
   browserify: {
     bundleConfigs: [{
-      entries    : src + '/js/main.js',
+      entries    : src + '/js/start.js',
       dest       : dest + '/js/',
       outputName : 'app.js',
       extensions : ['.hbs']
@@ -101,7 +101,7 @@ module.exports = {
    */
   default: {
     cssSrc : src + '/css/*.scss',
-    jsSrc  : src + '/js/main.js',
+    jsSrc  : src + '/js/start.js',
     dest   : '../../' + dest + '/js/',
     api    : appConfig.development.api_url,
     i18n   : appConfig.staging.i18n_url,
@@ -115,7 +115,7 @@ module.exports = {
    */
   development: {
     cssSrc : src + '/css/*.scss',
-    jsSrc  : src + '/js/main.js',
+    jsSrc  : src + '/js/start.js',
     dest   : dest + '/js/',
     api    : appConfig.development.api_url,
     i18n   : appConfig.staging.i18n_url
@@ -127,7 +127,7 @@ module.exports = {
    */
   developmentNoWatch: {
     cssSrc : src + '/css/*.scss',
-    jsSrc  : src + '/js/main.js',
+    jsSrc  : src + '/js/start.js',
     dest   : dest + '/js/',
     api    : appConfig.development.api_url,
     i18n   : appConfig.staging.i18n_url
@@ -137,7 +137,7 @@ module.exports = {
    */
   production: {
     cssSrc : src + '/css/*.scss',
-    jsSrc  : src + '/js/main.js',
+    jsSrc  : src + '/js/start.js',
     dest   : dest + '/js/',
     api    : appConfig.production.api_url,
     i18n   : appConfig.staging.i18n_url
@@ -147,7 +147,7 @@ module.exports = {
    */
   staging: {
     cssSrc : src + '/css/*.scss',
-    jsSrc  : src + '/js/main.js',
+    jsSrc  : src + '/js/start.js',
     dest   : dest + '/js/',
     api    : appConfig.staging.api_url,
     i18n   : appConfig.staging.i18n_url

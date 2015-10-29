@@ -1,6 +1,6 @@
 module.exports = function(config) {
   config.set({
-    //logLevel: 'LOG_DEBUG',
+    logLevel: 'LOG_DEBUG',
 
     reporters: ['spec', 'coverage'],
 
@@ -23,24 +23,35 @@ module.exports = function(config) {
     ],
 
     files: [
-      'dist/js/vendors.js',
+      'src/js/vendors.js',
+      'src/js/commons/**/*.js',
+      'src/js/**/!(start).js',
       'test/**/**.test.js'
     ],
+
+    global: {
+      statements: 50,
+      branches: 50,
+      functions: 50,
+      lines: 50
+    },
 
     // list of files to exclude
     exclude: [],
 
     preprocessors: {
-      'test/**/**.test.js': ['browserify'],
-      'src/**/*.js': ['browserify', 'coverage']
+      'src/js/**/*.js': ['browserify', 'coverage'],
+      'test/**/**.test.js': ['browserify']
     },
 
     coverageReporter: {
       dir: 'coverage/',
       reporters: [
-        { type: 'html' },
-        { type: 'lcovonly', dir: 'coverage/'}
-      ]
+        { type: 'html'},
+        { type: 'text'},
+        { type: 'lcov', subdir: 'lcov/'}
+      ],
+//      includeAllSources: true
     },
 
     browserify: {

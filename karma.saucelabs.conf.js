@@ -74,7 +74,11 @@ require('./karma.local.conf.js')({
     defCfg = obj;
   }
 });
-for (key in defCfg) if (!(key in cfg) && defCfg.hasOwnProperty(key)) cfg[key] = defCfg[key];
+for (key in defCfg) {
+  if (!(key in cfg) && defCfg.hasOwnProperty(key)) {
+    cfg[key] = defCfg[key];
+  }
+}
 
 module.exports = function(config) {
   config.set(cfg);

@@ -26,4 +26,4 @@ App.on('start', function() {
   Backbone.history.start();
 });
 
-App.start();
+module.exports = App;
