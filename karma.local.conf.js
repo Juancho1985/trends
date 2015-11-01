@@ -2,7 +2,7 @@ var istanbul = require('browserify-istanbul');
 
 module.exports = function(config) {
   config.set({
-    logLevel: 'LOG_DEBUG',
+    //logLevel: 'LOG_DEBUG',
 
     reporters: ['spec', 'coverage'],
 
