@@ -12,4 +12,3 @@ script: gulp production
 install: travis_retry npm install
 after_success:
 - npm run coveralls
-- npm run ci
