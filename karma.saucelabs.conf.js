@@ -6,6 +6,7 @@ var browsers = {
     platform: 'Windows 7',
     version: '35'
   },
+  /*
   sl_firefox: {
     base: 'SauceLabs',
     browserName: 'firefox',
@@ -17,6 +18,7 @@ var browsers = {
     platform: 'OS X 10.9',
     version: '7.1'
   },
+  */
   sl_ie_11: {
     base: 'SauceLabs',
     browserName: 'internet explorer',
