@@ -1,3 +1,5 @@
+var istanbul = require('browserify-istanbul');
+
 module.exports = function(config) {
   config.set({
     logLevel: 'LOG_DEBUG',
@@ -11,7 +13,7 @@ module.exports = function(config) {
     autoWatch : false,
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    //basePath: 'src/js/',
+    basePath: '',
 
     port: 9876,
 
@@ -51,13 +53,23 @@ module.exports = function(config) {
         { type: 'text'},
         { type: 'lcov', subdir: 'lcov/'}
       ],
-//      includeAllSources: true
+      instrumenterOptions: {
+        istanbul: {
+          noCompact: true
+        }
+      },
+      instrumenter: {
+        'test/**/*.js': 'istanbul'
+      },
+      includeAllSources: true
     },
 
     browserify: {
       debug: true,
       extensions: ["js", "hbs"],
-      transform: [['hbsfy', {"extensions": "hbs"}], 'brfs', 'browserify-shim']
+      transform: [['hbsfy', {"extensions": "hbs"}], 'brfs', istanbul({
+        ignore: ['**/node_modules/**', '**/test/**']
+      })]
     },
 
     // enable / disable colors in the output (reporters and logs)
