@@ -5,5 +5,5 @@ before_script:
 script: gulp production
 install: travis_retry npm install
 after_success:
-    - npm run ci
     - npm run coveralls
+    - npm run ci
