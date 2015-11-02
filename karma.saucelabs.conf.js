@@ -36,8 +36,8 @@ var key,
     browsers: Object.keys(browsers),
     customLaunchers: browsers,
     //logLevel: 'LOG_INFO',
-    captureTimeout: 120000,
-    browserNoActivityTimeout: 60000,
+    captureTimeout: 1200000,
+    browserNoActivityTimeout: 600000,
 
     // https://docs.saucelabs.com/reference/test-configuration
     sauceLabs: {
@@ -59,23 +59,12 @@ var key,
     autoWatch : false
   };
 
-
-if (process.env.TRAVIS) {
-
-  cfg.logLevel = 'LOG_DEBUG';
-
-  cfg.sauceLabs.build = 'TRAVIS #' + process.env.TRAVIS_BUILD_NUMBER + ' (' + process.env.TRAVIS_BUILD_ID + ')';
-  cfg.sauceLabs.startConnect = false;
-  cfg.sauceLabs.recordScreenshots = true;
-  cfg.sauceLabs.tunnelIdentifier = process.env.TRAVIS_JOB_NUMBER;
-}
-
-
 require('./karma.local.conf.js')({
   set: function(obj) {
     defCfg = obj;
   }
 });
+
 for (key in defCfg) {
   if (!(key in cfg) && defCfg.hasOwnProperty(key)) {
     cfg[key] = defCfg[key];
