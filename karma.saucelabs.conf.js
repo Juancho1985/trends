@@ -37,6 +37,9 @@ var key,
     customLaunchers: browsers,
     //logLevel: 'LOG_INFO',
     captureTimeout: 1200000,
+    maxDuration: 10800000,
+    commandTimeout: 600000,
+    idleTimeout: 1000000,
     browserNoActivityTimeout: 600000,
 
     // https://docs.saucelabs.com/reference/test-configuration
