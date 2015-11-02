@@ -66,7 +66,7 @@ module.exports = function(config) {
 
     browserify: {
       debug: true,
-      extensions: ["js", "hbs"],
+      extensions: [".js", ".hbs"],
       transform: [['hbsfy', {"extensions": "hbs"}], 'brfs', istanbul({
         ignore: ['**/node_modules/**', '**/test/**']
       })]
