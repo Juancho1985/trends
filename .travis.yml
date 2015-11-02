@@ -9,5 +9,5 @@ before_script:
 - npm install -g gulp
 script: gulp production
 install: travis_retry npm install
-after_success:
+after_script:
 - npm run coveralls
