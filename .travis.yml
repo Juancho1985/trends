@@ -1,5 +1,3 @@
-addons:
-  sauce_connect: true
 env:
   global:
   - secure: uZtP4QnmeID2hC2r9y9Jg1C0YZi2vFTKeBC0T7MM1k/9UMh/c9TaUkRvYBE+fq51rJfcBtT3CgwOXmLBgTq/XAOCfePnAgPm7fshbfLCilQsM483LX1aQpLhQRaof9oAbvX7ZDMg8Ahwvnsep3SGCpFftiSXdgJz1Ym0V5ArCs8fEcH2Ds26Qb+uegL5zdwb+IWd6LuJtciTU8xp6/XYRtE44GDGQT04ASMBcASzk0WLLUqLaLdla/L78HptS1o+guzZ3zErzlNRG996RCTcnfImhTtLqOjIy2YNXrqbL1Y4hfIoputKsPqh5H0triQ00ArP4uKDZQgz2bnnVR2v9aLrbVicEMjuRHaBmqRsypAPnGl6My4ZrsA+tjfMHafJ0duNteWs/c7Z3cz1I7zO8x9FlFeSdrqegxJU/l+wJVBetLztObwkvGbkbqX+BW/lbBrUvSyv9i3fbj4DLotNYXsobuYTbQTPICiE+BoKRuSh+8y+tBVdWQ3tWaToX9KbRNR9mkPxt3myBZqAjTDRb1/pZwXares6iC7wpGspYpDVgAPYcYuTcMFnT6VotE83oK4WRJbuz62jiYdXbcOuDVP3WFKxkfZoj84pkwa524vDNggQQCY5bnlG9lNDDe5IrrBbh2bv0j+Ra/q1vPsjhVlLwKoz9wyjpc66vQd6Dlc=
@@ -9,5 +7,7 @@ before_script:
 - npm install -g gulp
 script: gulp production
 install: travis_retry npm install
+addons:
+  sauce_connect: true
 after_script:
 - npm run coveralls
