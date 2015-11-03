@@ -7,8 +7,8 @@ env:
 before_script:
 - npm install
 - npm install -g gulp
-- npm run test-sl
 script: gulp production
 install: travis_retry npm install
-after_script:
+after_success:
 - npm run coveralls
+- npm run test-sl
