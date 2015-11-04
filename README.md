@@ -4,7 +4,7 @@
 
 ## Synopsis
 
-Trends cards, an application to show trends by giving the effect you choose.
+Trends cards, an application to show trends by choosing the grid size you want.
 
 ## Motivation
 
