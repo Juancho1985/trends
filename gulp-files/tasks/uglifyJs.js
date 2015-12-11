@@ -4,14 +4,21 @@ var gulp    = require('gulp'),
     uglify = require('gulp-uglify'),
     environment      = require('yargs').argv._[0] || 'default';
 
-gulp.task('uglify', ['browserify'], function () {
+function minifyJs(sourceFile) {
   var
       environmentConfig = config[environment],
       source = environmentConfig.dest;
 
-  return gulp.src(source + '/factory.js')
+  return gulp.src(source + sourceFile)
       .pipe(uglify())
-      .pipe(size())
       .pipe(gulp.dest(source));
+}
 
+gulp.task('uglify:vendors', ['browserify'], function () {
+  minifyJs('vendors.js');
+});
+
+
+gulp.task('uglify', ['uglify:vendors'], function () {
+  return minifyJs('factory.js');
 });

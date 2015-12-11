@@ -1,18 +1,17 @@
 var gulp = require('gulp'),
-    environment      = require('yargs').argv._[0] || 'default',
-    config  = require('../config'),
-    replaceValues  = require('gulp-replace');
+  _ = require('lodash'),
+  environment      = require('yargs').argv._[0] || 'default',
+  pathsConfig  = require('../config'),
+  urlsConfig = require('../../configs/trends-config.json'),
+  replaceValues  = require('gulp-replace');
 
-gulp.task('replace', function () {
-    var
-        environmentConfig = config[environment],
-        source = environmentConfig.src,
-        apiUrl = environmentConfig.apiUrl,
-        i18nUrl = environmentConfig.i18nUrl,
-        destUrl = environmentConfig.destUrl;
+gulp.task('replace', ['browserify'], function () {
+  var
+    environmentConfig = _.merge(pathsConfig, urlsConfig)[environment];
 
-    return gulp.src(source + 'factory.js')
-        .pipe(replaceValues(/__api__/g, apiUrl))
-        .pipe(replaceValues(/__i18n_url__/g, i18nUrl))
-        .pipe(gulp.dest('../../' + destUrl));
+  return gulp.src(environmentConfig.dest + 'factory.js')
+    .pipe(replaceValues(/__([\w|-]*?)__/g, function ($0, $1) {
+      return environmentConfig[$1];
+    }))
+    .pipe(gulp.dest(environmentConfig.dest));
 });

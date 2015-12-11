@@ -1,6 +1,4 @@
 var
     gulp = require('gulp');
 
-gulp.task('default', ['assets', 'watch'], function () {
-    gulp.start('replace');
-});
+gulp.task('default', ['assets', 'sass', 'jshint', 'watch', 'markup']);

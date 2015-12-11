@@ -1,4 +1,3 @@
 var gulp       = require('gulp');
 
-
-gulp.task('assets', ['fonts', 'sass', 'images', 'markup', 'i18n', 'templates']);
+gulp.task('assets', ['fonts', 'images', 'i18n', 'templates']);

@@ -13,7 +13,7 @@ var gulp     = require('gulp'),
 gulp.task('jshint', function () {
   return gulp.src(config.src)
     .pipe(jshint())
-    .pipe(jscs())
+    //.pipe(jscs())
     .on('error', noop) //In order to stop jscs error to combine with jshint
     .pipe(stylish.combineWithHintResults())
     .pipe(jshint.reporter('default'));
