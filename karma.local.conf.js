@@ -64,14 +64,6 @@ module.exports = function(config) {
       includeAllSources: true
     },
 
-    browserify: {
-      debug: true,
-      extensions: [".js", ".hbs"],
-      transform: [['hbsfy', {"extensions": "hbs"}], 'brfs', istanbul({
-        ignore: ['**/node_modules/**', '**/test/**']
-      })]
-    },
-
     // enable / disable colors in the output (reporters and logs)
     colors: true,
 
@@ -79,6 +71,29 @@ module.exports = function(config) {
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: [
       'PhantomJS2'//, 'Firefox'
+    ],
+    browserify: {
+      debug: true,
+      extensions: [ ".js", ".hbs" ],
+      transform: [['hbsfy', { "extensions": "hbs"}], 'babelify', 'brfs', istanbul({
+        ignore: ['**/node_modules/**', '**/test/**']
+      })]
+    },
+    babelPreprocessor: {
+      options: {
+        presets: ['es2015']
+      }
+    },
+    plugins: [
+      require("karma-nyan-reporter"),
+      require("karma-mocha"),
+      require("karma-firefox-launcher"),
+      require("karma-phantomjs2-launcher"),
+      require("karma-coverage"),
+      require("karma-browserify"),
+      require("karma-spec-reporter"),
+      require("karma-babel-preprocessor"),
+      require("babel-preset-es2015")
     ]
   });
 };

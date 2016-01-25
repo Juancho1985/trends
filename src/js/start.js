@@ -1,1 +1,1 @@
-require('./main.js').start();
+import "./vendors.js";
